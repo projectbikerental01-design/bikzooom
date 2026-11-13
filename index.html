@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bikzooom | Bike rental by the hour or day</title>
+<meta name="description" content="Rent a Splendor, Royal Enfield or a premium sports bike by the hour or by the day. Book online, we verify and deliver or you pick up.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=Barlow+Semi+Condensed:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+<div id="site-header"></div>
+<main>
+<section class="hero"><div class="wrap">
+  <div class="sign hero-sign">
+    <div class="hero-copy">
+      <h1>Pick a bike. Ride today. Return it tonight.</h1>
+      <p class="lead" id="hero-lead"></p>
+      <div class="cta"><a class="btn btn-yellow btn-lg" href="bikes.html">See the bikes</a><a class="btn btn-ghost-w btn-lg" href="track.html">Track a booking</a></div>
+    </div>
+    <div class="hero-photos" id="hero-photos" aria-hidden="true"></div>
+  </div>
+  <div class="stones" id="stones"></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><h2>Popular this week</h2><a class="more" href="bikes.html">Full fleet</a></div>
+  <div class="grid-bikes" id="featured"><p class="empty">Loading bikes...</p></div>
+</div></section>
+
+<section class="sec sec-tint"><div class="wrap">
+  <h2>Choose by the kind of ride</h2>
+  <div class="cats" id="cats"></div>
+</div></section>
+
+<section class="sec"><div class="wrap two">
+  <div>
+    <h2>How booking works</h2>
+    <ol class="steps">
+      <li><b>Choose your bike</b><span>Pick a bike, then your pickup and return time. The price updates as you choose.</span></li>
+      <li><b>Fill in the booking form</b><span>Your details, Aadhaar and driving licence number. No online payment is taken.</span></li>
+      <li><b>We verify you</b><span>We check your details and email you the result. You can follow progress with your booking code.</span></li>
+      <li><b>Ride</b><span>We deliver the bike to your address, or you collect it from our showroom.</span></li>
+    </ol>
+  </div>
+  <div>
+    <h2>Keep these ready</h2>
+    <ul class="ticks"><li>Aadhaar card (original at handover)</li><li>A valid two-wheeler driving licence</li><li>Age 18 or above</li><li>A working phone number and email</li></ul>
+    <h3 class="mt">Rental rules</h3>
+    <ul class="ticks" id="policies"></ul>
+  </div>
+</div></section>
+
+<section class="sec sec-tint"><div class="wrap two">
+  <div>
+    <h2>Visit the showroom</h2>
+    <p class="big" id="visit-addr"></p>
+    <p id="visit-hours"></p><p id="visit-phone"></p>
+    <a class="btn btn-green" href="contact.html">Contact details</a>
+  </div>
+  <div class="map" id="map"></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sign cta-band"><h2>Ready when you are.</h2><a class="btn btn-yellow btn-lg" href="bikes.html">Book a bike</a></div>
+</div></section>
+</main>
+<div id="site-footer"></div>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="js/config.js"></script><script src="js/firebase.js"></script><script src="js/common.js"></script>
+<script src="js/card.js"></script><script src="js/home.js"></script>
+</body></html>

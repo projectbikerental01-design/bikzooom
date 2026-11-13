@@ -1,0 +1,41 @@
+You are working inside my project folder. Deploy this project to Firebase Hosting. Nothing else.
+
+Project ID:  bikzooom
+Public directory: [. | public | dist]
+
+STEPS:
+1. Check that firebase.json and .firebaserc exist. If they don't, stop and tell me.
+2. If this is a Vite/React project, run npm run build first so the dist folder exists.
+3. Run: firebase deploy --only hosting --project  bikzooom
+4. Give me the Hosting URL when it finishes.
+
+RULES:
+- Deploy hosting only. Do not deploy database or firestore rules.
+- Do not touch, create, or overwrite any files.
+- Do not run firebase init, install anything, or change any database data.
+- If a command fails (including "not logged in"), show me the exact error and stop.
+
+
+
+You are working inside my project folder. Deploy this project to my EXISTING Netlify site. Nothing else.
+
+Netlify site name or ID: bikzooom-payment
+Project type: [plain HTML/CSS/JS | React + Vite]
+Publish directory: [. | public | dist]
+
+STEPS:
+1. Check that the Netlify CLI is installed (netlify --version). If it's missing, install it with: npm install -g netlify-cli (use sudo if permission is denied).
+2. Check that I'm logged in (netlify status). If not, run netlify login, show me the prompt, and wait for me to approve in the browser.
+3. Link this folder to my existing site. Run netlify link --name YOUR_SITE_NAME_OR_ID, or use --id if I gave an ID. Do NOT create a new site.
+4. If this is a Vite/React project, run npm run build first so the dist folder exists.
+5. Run a draft deploy first: netlify deploy --dir=PUBLISH_DIRECTORY
+   Show me the draft URL.
+6. Then deploy to production: netlify deploy --prod --dir=PUBLISH_DIRECTORY
+7. Give me the final live URL.
+
+RULES:
+- Deploy only. Do not create a new Netlify site.
+- Do not edit, create, or delete any source files (except the .netlify link folder that the CLI creates).
+- Do not change environment variables, domains, or site settings.
+- If I have a netlify/functions folder, deploy it along with the site using --functions=netlify/functions.
+- If any command fails, show me the exact error and stop instead of guessing.
